@@ -2,6 +2,7 @@
 <% @posts.reverse.each do |post| %>
   <p><%= simple_format(post.message) %></p>
   <p><%= post.created_at.strftime("Posted on %d/%m/%Y") %></p>
+  <p><%= post.user_id %></p>
   <p><%= link_to 'Edit', edit_post_path(post) %></p>
 <% end %>
 

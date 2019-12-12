@@ -16,24 +16,21 @@ class PostsController < ApplicationController
     redirect_to posts_url
   end
 
-
   def update
-  @post =  Post.find(params[:id])
-  if (current_user == @post.user) && @post.created_at > 10.minutes.ago
-    @post.update(post_params)
-    redirect_to posts_url
-  else
-    if @post.created_at < 10.minutes.ago
-      flash[:alert] = "Post cannot be edited"
-      redirect_to post_url
+    @post = Post.find(params[:id])
+    if (current_user == @post.user) && @post.created_at > 10.minutes.ago
+      @post.update(post_params)
+      redirect_to posts_url
     else
-      flash[:alert] = "Post cannot be edited"
-      redirect_to post_url
+      if @post.created_at < 10.minutes.ago
+        flash[:alert] = 'Post cannot be edited'
+        redirect_to post_url
+      else
+        flash[:alert] = 'Post cannot be edited'
+        redirect_to post_url
+      end
     end
   end
-end
-
-
 
   def show
     @post = Post.find(params[:id])
@@ -42,7 +39,6 @@ end
   def index
     @posts = Post.all
   end
-
 
   def destroy
     @post = Post.find(params[:id])
@@ -54,8 +50,6 @@ end
       redirect_to post_url
     end
   end
-
-
 
   private
 
