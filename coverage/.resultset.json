@@ -607,6 +607,8 @@
         null
       ],
       "/Users/student/projects/weekly-challenges/acebook-AceofBaseBook/app/helpers/users_helper.rb": [
+        null,
+        null,
         1,
         null
       ],
@@ -743,6 +745,8 @@
         null
       ],
       "/Users/student/projects/weekly-challenges/acebook-AceofBaseBook/spec/controllers/users_controller_spec.rb": [
+        null,
+        null,
         1,
         null,
         1,
@@ -750,6 +754,8 @@
         null
       ],
       "/Users/student/projects/weekly-challenges/acebook-AceofBaseBook/app/controllers/users_controller.rb": [
+        null,
+        null,
         1,
         1,
         null,
@@ -904,6 +910,8 @@
         null
       ],
       "/Users/student/projects/weekly-challenges/acebook-AceofBaseBook/spec/helpers/users_helper_spec.rb": [
+        null,
+        null,
         1,
         null,
         null,
@@ -975,6 +983,6 @@
         null
       ]
     },
-    "timestamp": 1576235837
+    "timestamp": 1576236130
   }
 }
