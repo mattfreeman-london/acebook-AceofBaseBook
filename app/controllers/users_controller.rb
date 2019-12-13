@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
     before_action :authenticate_user!
 
@@ -7,7 +9,6 @@ class UsersController < ApplicationController
   end
 
   def users
-    # before_action :authenticate_user!
     redirect_to user_path(current_user)
   end
 
